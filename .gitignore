@@ -1,0 +1,30 @@
+# Composer
+/vendor/
+
+# Environment
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs & Cache
+/storage/logs/*.log
+/storage/cache/*
+/storage/exports/*
+!storage/logs/.gitkeep
+!storage/cache/.gitkeep
+!storage/exports/.gitkeep
+
+# Uploads
+/public/uploads/imports/*
+/public/uploads/avatars/*
+!/public/uploads/imports/.gitkeep
+!/public/uploads/avatars/.gitkeep
