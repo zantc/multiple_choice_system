@@ -208,3 +208,24 @@ body{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+
+/* --- Thêm CSS cho thông báo Alert --- */
+.alert {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+}
+.alert.error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+}
+.alert.success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+}
