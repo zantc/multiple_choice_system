@@ -589,6 +589,15 @@ function sessionStatus(array $session): array
             grid-template-columns: 1fr 1fr;
             gap: 12px;
         }
+        .row > div {
+            min-width: 0;
+        }
+        .time-row {
+            grid-template-columns: 1fr;
+        }
+        .time-row input {
+            max-width: 100%;
+        }
         .check-line {
             display: inline-flex;
             align-items: center;
@@ -797,7 +806,7 @@ function sessionStatus(array $session): array
                             <?php endforeach; ?>
                         </select>
 
-                        <div class="row">
+                        <div class="row time-row">
                             <div>
                                 <label for="start_time">Bắt đầu</label>
                                 <input id="start_time" type="datetime-local" name="start_time" value="<?= h(toDateTimeLocal($formSession['start_time'])) ?>" required>
