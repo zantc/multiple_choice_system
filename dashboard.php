@@ -167,6 +167,7 @@ function getAssignedSessionStatus(array $session): array
             <span>Xin chào, <b><?= htmlspecialchars($currentUser['full_name']) ?></b>!</span>
             <?php if (in_array($currentUser['role'], ['admin', 'teacher'], true)): ?>
                 <a href="exam_management.php" class="nav-link"><i class="fa-solid fa-calendar-days"></i> Quản lý kỳ thi</a>
+                <a href="system_reports.php" class="nav-link"><i class="fa-solid fa-chart-line"></i> Thống kê</a>
             <?php endif; ?>
             <a href="logout.php" class="logout-btn"><i class="fa-solid fa-right-from-bracket"></i> Thoát</a>
         </div>

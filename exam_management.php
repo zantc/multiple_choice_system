@@ -758,6 +758,7 @@ function sessionStatus(array $session): array
         <h2><i class="fa-solid fa-calendar-days"></i> Quản lý kỳ thi</h2>
         <div class="nav-actions">
             <span><?= h($currentUser['full_name']) ?> (<?= h($currentUser['role']) ?>)</span>
+            <a class="nav-link" href="system_reports.php"><i class="fa-solid fa-chart-line"></i> Thống kê</a>
             <a class="nav-link" href="dashboard.php"><i class="fa-solid fa-table-columns"></i> Dashboard</a>
             <a class="nav-link" href="logout.php"><i class="fa-solid fa-right-from-bracket"></i> Thoát</a>
         </div>
